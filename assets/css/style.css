@@ -70,7 +70,6 @@ body {
     color: #ffffff;
     background-color: rgb(55, 102, 189);
     box-shadow: 2px 8px 8px lightgray;
-    text-shadow: 2px 4px 5px black
   }
 
   .nav ul {
@@ -89,12 +88,26 @@ body {
     color: #ffffff;
     display: inline-flex;
     text-align: right;
+  }
+
+  .nav li:hover {
+    font-size: 130%;
     text-shadow: 2px 4px 5px black;
+    transition: all 0.3s ease-in-out;
   }
 
   .center-name {
-      text-align: center;
-      text-shadow: 2px 5px 5px lightgray;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 2px 5px 5px lightgray;
+  }
+
+  .center-name:hover {
+    color: #ffffff;
+    text-shadow: -2px 5px 20px rgb(55, 102, 189);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
   }
 
   .about-me {
@@ -104,18 +117,31 @@ body {
     text-align: center;
     color: #ffffff;
     background-color: rgb(55, 102, 189);
-    box-shadow: 2px 8px 8px lightgray;
-    text-shadow: 2px 4px 5px black
+    box-shadow: 5px 8px 8px lightgray;
   }
 
-img {
-    box-shadow: 2px 8px 8px black;
+  .about-me:hover,
+  .projects:hover,
+  .contact:hover {
+    border: 2px solid rgb(55, 102, 189);
+    padding: 10px;
+    text-align: center;
+    color: rgb(55, 102, 189);
+    background-color: white;
+    box-shadow: 5px 8px 8px black;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+  }
+
+img:hover {
+  box-shadow: 2px 5px 8px black;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
 }
 
 .image {
       display: flex;
       flex-wrap: wrap;
-      display: flex;
       flex-direction: column;
       padding: 20px;
   }
@@ -123,7 +149,7 @@ img {
  .project-images {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
   }
 
 figcaption {
@@ -131,34 +157,34 @@ figcaption {
 }
 
   .projects {
-      /* display: flex; */
-      border: 2px solid rgb(55, 102, 189);
-      border-radius: 10px;
-      padding: 10px;
-      text-align: center;
-      color: #ffffff;
-      background-color: rgb(55, 102, 189);
-      box-shadow: 2px 8px 8px lightgray;
-      text-shadow: 2px 4px 5px black
+    /* display: flex;  */
+    border: 2px solid rgb(55, 102, 189);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgb(55, 102, 189);
+    box-shadow: 5px 8px 8px lightgray;
   }
 
   .contact {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-      text-align: center;
-      border: 2px solid rgb(55, 102, 189);
-      border-radius: 10px;
-      padding: 10px;
-      color: #ffffff;
-      background-color: rgb(55, 102, 189);
-      box-shadow: 2px 8px 8px lightgray;
-      text-shadow: 2px 4px 5px black
+    text-align: center;
+    border: 2px solid rgb(55, 102, 189);
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgb(55, 102, 189);
+    box-shadow: 5px 8px 8px lightgray;
   }
 
   .contact a {
     display: inline-flex;
-    color: white;
+    flex-wrap: wrap;
+    color: inherit;
     text-decoration: none;
     text-align: center;
   }
@@ -169,9 +195,13 @@ figcaption {
     align-items: center; 
     justify-content: center;
     color: #ffffff;
-      background-color: rgb(55, 102, 189);
-      box-shadow: 2px 8px 8px lightgray;
-      text-shadow: 2px 4px 5px black
+    background-color: rgb(55, 102, 189);
+    box-shadow: 2px 8px 8px lightgray;
+  }
+
+  footer:hover {
+    text-shadow: 2px 4px 5px black;
+    transition: all 0.3s ease-in-out;
   }
 
 /* General text alignment */
