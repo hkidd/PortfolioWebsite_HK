@@ -1,187 +1,228 @@
- Universal Selector 
+ :root {
+--main-accent: rgba(86, 166, 114, 1); 
+--background: rgba(38, 38, 38, 1); 
+ }
+ 
+ /* Universal Selector  */
 * {
     margin: 0;
     padding: 0;  
   }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: auto;
-    margin: 0;
-}
+/* body { 
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: auto;
+  margin: 0;
+}*/
 
 /* Column setup */
 .wrapper {
-    display: flex;
+  display: flex;
 }
 
 .left {
-    width: 30%;
-    padding: 50px;
+  width: 30%;
+  padding: 50px;
 }
 
 .right {
-    width: 70%;
-    padding: 50px;
+  width: 70%;
+  padding: 50px;
 }
 
 /* Main text */
 body { 
-    font-family: "Goudy Bookletter 1911", sans-serif;
-    font-size: 20px;
-    background-color: white;
-    color: rgb(55, 102, 189);
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  font-size: 20px;
+  background-color: var(--background); 
+  /*background-image: url(../images/94-947253_1080p-hd-gradient.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--primary-text);*/
   }
 
-  header,
-  footer {
-    width: 100%;
-    background-color: rgb(55, 102, 189);
-    color: white;
+header,
+footer {
+  width: 100%;
+  background-color: var(--background);
+  color: var(--primary-text);
   }
 
-  h1 {
-      font-size: 200%;
+h1 {
+  font-size: 200%;
   }
 
-  a {
-    display: block; 
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+a {
+  display: block; 
+  color: var(--main-accent);
+  text-align: center;
+  padding: 5px 3px;
+  text-decoration: none;
   }
 
-  li {
-    display: inline;
-    padding: 20px;
+li {
+  display: inline;
+  padding: 20px;
   }
 
-  .header h1 {
-      display: inline-flex;
-      margin: auto;
-      padding-top: 20px;
-      text-align: left;
+.header h1 {
+  display: inline-flex;
+  margin: auto;
+  padding-top: 20px;
+  text-align: left;
   }
 
-  .nav {
-    justify-content: space-between;
-    align-items: center;
-    color: #ffffff;
-    background-color: rgb(55, 102, 189);
-    box-shadow: 2px 8px 8px lightgray;
+.nav {
+  justify-content: space-between;
+  align-items: center;
+  color: var(--main-accent);
+  background-color: var(--background);
   }
 
-  .nav ul {
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-    top: 0;
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.nav ul {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   }
   
-  .nav li {
-    color: #ffffff;
-    display: inline-flex;
-    text-align: right;
+.nav li {
+  color: var(--main-accent);
+  display: inline-flex;
+  text-align: right;
+  border-radius: 10px;
   }
 
-  .nav li:hover {
-    font-size: 130%;
-    text-shadow: 2px 4px 5px black;
-    transition: all 0.3s ease-in-out;
+.nav li:hover {
+  /* font-size: 130%; */
+  border: 2px solid var(--main-accent);
+  border-radius: 10px;
+  color: var(--background);
+  background-color: var(--background);
+  text-shadow: 2px 4px 5px black;
+  transition: all 0.3s ease-in-out;
   }
 
-  .center-name {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    text-shadow: 2px 5px 5px lightgray;
+.center-name {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--main-accent);
+  /* text-shadow: 2px 5px 5px var(--third-accent); */
   }
 
-  .center-name:hover {
-    color: #ffffff;
-    text-shadow: -2px 5px 20px rgb(55, 102, 189);
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.05);
+.center-name:hover {
+  color: var(--main-accent);
+  text-shadow: -2px 5px 10px black;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
   }
 
-  .about-me {
-    border: 2px solid rgb(55, 102, 189);
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    color: #ffffff;
-    background-color: rgb(55, 102, 189);
-    box-shadow: 5px 8px 8px lightgray;
+.about-me,
+.projects,
+.contact {
+  margin: 5px;
+  border: 2px solid var(--main-accent);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  color: var(--background);
+  background-color: var(--main-accent);
+  /* box-shadow: 5px 8px 8px black;  */
   }
 
-  .about-me:hover,
-  .projects:hover,
-  .contact:hover {
-    border: 2px solid rgb(55, 102, 189);
-    padding: 10px;
-    text-align: center;
-    color: rgb(55, 102, 189);
-    background-color: white;
-    box-shadow: 5px 8px 8px black;
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.05);
+.about-me:hover,
+.projects:hover,
+.contact:hover {
+  border: 2px solid var(--main-accent);
+  padding: 10px;
+  text-align: center;
+  color: var(--main-accent);
+  background-color: var(--background);
+  box-shadow: 5px 8px 8px black;
+  text-shadow: 2px 4px 5px black;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.05);
   }
 
 img:hover {
   box-shadow: 2px 5px 8px black;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   transform: scale(1.05);
+  border-radius: 10px;
 }
 
 .image {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-shrink: inherit;
+  padding: 20px;
+  margin: auto;
+  width: auto;
   }
 
  .project-images {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   }
 
-figcaption {
-    padding: 20px;
+.primary-image {
+  display: flex;
+  margin: auto;
+  width: auto;
 }
 
-  .projects {
-    /* display: flex;  */
-    border: 2px solid rgb(55, 102, 189);
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    color: #ffffff;
-    background-color: rgb(55, 102, 189);
-    box-shadow: 5px 8px 8px lightgray;
+figcaption {
+  padding: 20px;
+  margin: auto;
+  width: auto;
+  border-radius: 10px;
+}
+
+figcaption:hover {
+  border: 2px solid var(--main-accent);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  color: var(--main-accent);
+  background-color: var(--background);
+  box-shadow: 2px 5px 8px black;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.05);
+}
+
+.projects {
+  /*border: 2px solid rgb(55, 102, 189);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgb(55, 102, 189);
+  box-shadow: 5px 8px 8px lightgray;*/
+  min-width: fit-content;
+  overflow: auto;
   }
 
-  .contact {
-    display: flex;
-    flex-wrap: wrap;
+.contact {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 2px solid rgb(55, 102, 189);
+    /*border: 2px solid rgb(55, 102, 189);
     border-radius: 10px;
     padding: 10px;
     color: #ffffff;
     background-color: rgb(55, 102, 189);
-    box-shadow: 5px 8px 8px lightgray;
+    box-shadow: 5px 8px 8px lightgray;*/
   }
 
-  .contact a {
+.contact a {
     display: inline-flex;
     flex-wrap: wrap;
     color: inherit;
@@ -189,30 +230,61 @@ figcaption {
     text-align: center;
   }
 
-  .footer {
+.footer {
     height: 50px;
     display: flex;  
     align-items: center; 
     justify-content: center;
-    color: #ffffff;
-    background-color: rgb(55, 102, 189);
-    box-shadow: 2px 8px 8px lightgray;
+    color: var(--main-accent);
+    background-color: var(--background);
+    box-shadow: 2px 8px 8px black;
   }
 
-  footer:hover {
+footer:hover {
     text-shadow: 2px 4px 5px black;
     transition: all 0.3s ease-in-out;
   }
 
 /* General text alignment */
-  .text-right {
+.text-right {
     text-align: right;
   }
 
-  .text-center {
+.text-center {
     text-align: center;
   }
 
-  .text-left {
+.text-left {
     text-align: left;
   }
+
+  /* Social media icons */
+.fa-twitter .icon {
+  background: #55ACEE;
+  color: white;
+  border-radius: 10px;
+}
+
+.fa-linkedin .icon {
+  background: #007bb5;
+  color: white;
+  border-radius: 10px;
+}
+
+.fa-instagram .icon {
+  background: #007bb5;
+  color: white;
+  border-radius: 10px;
+}
+
+.contact a:hover, .icon:hover {
+  border: 2px solid var(--main-accent);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+@media screen and (max-width:768px) {
+    .wrapper {
+        display: block;
+    }
+}
