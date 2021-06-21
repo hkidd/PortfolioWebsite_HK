@@ -292,6 +292,11 @@ nav li:hover {
     width: 95%;
   }
 
+  .primary-image,
+.secondary-image {
+  opacity: 1;
+}
+
 /* Adds 3D effect for mobile */
   .about-me,
   .projects,
