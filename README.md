@@ -12,10 +12,18 @@ The site has a flatter design on desktop to begin with, as hover effects were em
 On mobile, the site starts with a more 3D look since you tend to miss out on the ability to "hover" when using touchscreens.
 
 ## Example Images
-(need to add)
+### Desktop
+![Desktop](assets/images/DesktopScreenshot.jpg)
+<br>
+
+### Mobile <br>
+<img src="assets/images/MobileScreenshot.jpg" width="350" height="650" />
+<img src="assets/images/MobileScreenshot2.jpg" width="350" height="650" />
 
 ## External and Internal Links
 I have provided links not only to the various sections of the webpage, but also to external sites such as Github, LinkedIn, and Instagram.  This allows for more ways for the user to potentially interact with me.
+
+Link to the live page: https://hkidd.github.io/PortfolioWebsite_HK/
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
