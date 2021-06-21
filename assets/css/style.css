@@ -98,7 +98,6 @@ nav li:hover {
   justify-content: center;
   text-align: center;
   color: var(--main-accent);
-  /*text-shadow: 2px 5px 5px var(--third-accent); */
   }
 
 .center-name:hover,
@@ -117,7 +116,6 @@ footer:hover {
   text-align: center;
   color: var(--background);
   background-color: var(--main-accent);
-  /* box-shadow: 5px 8px 8px black;  */
   }
 
 .contact {
@@ -145,7 +143,7 @@ footer:hover {
   }
 
 img:hover {
-  box-shadow: 5px 5px 5px var(--main-accent);
+  box-shadow: 5px 5px 5px black;
   transition: all 0.5s ease-in-out;
   transform: scale(1.05);
   border-radius: 10px;
@@ -197,22 +195,9 @@ img:hover {
 }
 
 figcaption {
-  padding: 20px;
+  padding: 15px;
   margin: auto;
   width: auto;
-  border-radius: 10px;
-}
-
-figcaption:hover {
-  border: 2px solid var(--main-accent);
-  border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-  color: var(--main-accent);
-  background-color: var(--background);
-  box-shadow: 2px 5px 8px black;
-  transition: all 0.5s ease-in-out;
-  transform: scale(1.05);
 }
 
 .projects {
@@ -241,7 +226,6 @@ figcaption:hover {
     justify-content: center;
     color: var(--main-accent);
     background-color: var(--background);
-    box-shadow: 2px 8px 8px black;
   }
 
 
@@ -299,4 +283,18 @@ figcaption:hover {
     .nav ul {
       width: 95%;
     }
+
+    /* Adds 3D effect for mobile */
+    .about-me,
+    .projects,
+    .contact,
+    .profile-image {
+      box-shadow: 5px 8px 8px black;
+  }
+
+  nav li,
+  .center-name,
+  footer {
+    text-shadow: 5px 8px 8px black;
+  }
 }
