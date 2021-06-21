@@ -84,27 +84,11 @@ nav li {
   padding: 20px;
   }
 
-nav li:hover {
-  border: 2px solid var(--main-accent);
-  border-radius: 10px;
-  color: var(--background);
-  background-color: var(--background);
-  text-shadow: 2px 4px 5px black;
-  transition: all 0.3s ease-in-out;
-  }
-
 .center-name {
   display: flex;
   justify-content: center;
   text-align: center;
   color: var(--main-accent);
-  }
-
-.center-name:hover,
-footer:hover {
-  text-shadow: -2px 5px 10px black;
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.05);
   }
 
 .about-me,
@@ -126,27 +110,6 @@ footer:hover {
 .about-me {
   margin-bottom: 50px;
   height: auto;
-}
-
-.about-me:hover,
-.projects:hover,
-.contact:hover {
-  border: 2px solid var(--main-accent);
-  padding: 10px;
-  text-align: center;
-  color: var(--main-accent);
-  background-color: var(--background);
-  box-shadow: 5px 8px 8px black;
-  text-shadow: 2px 4px 5px black;
-  transition: all 0.5s ease-in-out;
-  transform: scale(1.05);
-  }
-
-img:hover {
-  box-shadow: 5px 5px 5px black;
-  transition: all 0.5s ease-in-out;
-  transform: scale(1.05);
-  border-radius: 10px;
 }
 
 .profile-image {
@@ -203,31 +166,68 @@ figcaption {
 .projects {
   min-width: fit-content;
   overflow: auto;
-  }
+}
 
 .contact {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 .contact a {
-    display: inline-flex;
-    flex-wrap: wrap;
-    color: inherit;
-    text-decoration: none;
-    text-align: center;
-  }
+  display: inline-flex;
+  flex-wrap: wrap;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
 
 .footer {
-    height: 50px;
-    display: flex;  
-    align-items: center; 
-    justify-content: center;
-    color: var(--main-accent);
-    background-color: var(--background);
+  height: 50px;
+  display: flex;  
+  align-items: center; 
+  justify-content: center;
+  color: var(--main-accent);
+  background-color: var(--background);
+}
+
+/* Hover effects */
+.about-me:hover,
+.projects:hover,
+.contact:hover {
+  border: 2px solid var(--main-accent);
+  padding: 10px;
+  text-align: center;
+  color: var(--main-accent);
+  background-color: var(--background);
+  box-shadow: 5px 8px 8px black;
+  text-shadow: 2px 4px 5px black;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.05);
+}
+
+img:hover {
+  box-shadow: 5px 5px 5px black;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.05);
+  border-radius: 10px;
+}
+
+.center-name:hover,
+footer:hover {
+  text-shadow: -2px 5px 10px black;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
   }
 
+nav li:hover {
+  border: 2px solid var(--main-accent);
+  border-radius: 10px;
+  color: var(--background);
+  background-color: var(--background);
+  text-shadow: 2px 4px 5px black;
+  transition: all 0.3s ease-in-out;
+  }
 
 /* General text alignment */
 .text-right {
@@ -268,28 +268,29 @@ figcaption {
   padding: 5px;
 }
 
+/* Media query for smaller screens */
 @media screen and (max-width:768px) {
-    .wrapper {
-      display: block;
-    }
+  .wrapper {
+    display: block;
+  }
 
-    .left,
-    .right {
-      width: 80%;
-      padding: 30px;
-      margin: auto;
-    }
+  .left,
+  .right {
+    width: 80%;
+    padding: 30px;
+    margin: auto;
+  }
 
-    .nav ul {
-      width: 95%;
-    }
+  .nav ul {
+    width: 95%;
+  }
 
-    /* Adds 3D effect for mobile */
-    .about-me,
-    .projects,
-    .contact,
-    .profile-image {
-      box-shadow: 5px 8px 8px black;
+/* Adds 3D effect for mobile */
+  .about-me,
+  .projects,
+  .contact,
+  .profile-image {
+    box-shadow: 5px 8px 8px black;
   }
 
   nav li,
