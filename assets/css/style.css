@@ -63,7 +63,7 @@ li {
   text-align: left;
   }
 
-.nav ul {
+nav ul {
   display: flex; 
   flex-wrap: wrap;
   align-items: center; 
@@ -76,7 +76,7 @@ li {
   overflow: hidden;
   }
   
-.nav li {
+nav li {
   color: var(--main-accent);
   display: inline-flex;
   text-align: right;
@@ -84,7 +84,7 @@ li {
   padding: 20px;
   }
 
-.nav li:hover {
+nav li:hover {
   border: 2px solid var(--main-accent);
   border-radius: 10px;
   color: var(--background);
@@ -154,7 +154,7 @@ img:hover {
 .profile-image {
   display: flex;
   margin: auto;
-  width: 50%;
+  width: 70%;
   height: auto;
   border-radius: 100px;
 }
@@ -184,7 +184,7 @@ img:hover {
   margin: auto;
   max-width: 100%;
   width: auto;
-  max-height: 700px;
+  max-height: 600px;
   border-radius: 10px;
 }
 
@@ -197,7 +197,7 @@ img:hover {
 }
 
 figcaption {
-  padding: 10px;
+  padding: 20px;
   margin: auto;
   width: auto;
   border-radius: 10px;
