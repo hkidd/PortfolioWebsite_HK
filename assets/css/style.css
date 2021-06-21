@@ -170,7 +170,7 @@ img:hover {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 20px;
+  padding: 18px;
   margin: auto;
   }
 
@@ -207,7 +207,7 @@ img:hover {
 }
 
 figcaption {
-  padding: 20px;
+  padding: 10px;
   margin: auto;
   width: auto;
   border-radius: 10px;
@@ -296,6 +296,12 @@ figcaption:hover {
 
 @media screen and (max-width:768px) {
     .wrapper {
-        display: block;
+      display: block;
+    }
+
+    .left,
+    .right {
+      width: 85%;
+      padding: 30px;
     }
 }
