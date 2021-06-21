@@ -5,7 +5,7 @@ A website to showcase my coding portfolio.
 The purpose of this website is to showcase my coding capabilities.  At the moment, I don't have much to add (aside from our first assignment and pictures of my dogs), but I plan to continue adding to this website over time.
 
 ## Responsiveness and Design
-I spent quite a bit of time trying to optomize the website for use on both desktop screens as well as mobile screens.
+I've spent quite a bit of time trying to optomize the website for use on both desktop screens as well as mobile screens.
 
 The site has a flatter design on desktop to begin with, as hover effects were employed to add some depth to the different areas depending on where the user moves their cursor.
 
