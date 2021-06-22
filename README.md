@@ -7,7 +7,9 @@ Link to the live page: https://hkidd.github.io/PortfolioWebsite_HK/
 The purpose of this website is to showcase my coding capabilities.  At the moment, I don't have much to add (aside from our first assignment and pictures of my dogs), but I plan to continue adding to this website over time.
 
 ## Acceptance Criteria
+```
 GIVEN I need to sample a potential employee's previous work
+
 WHEN I load their portfolio
 THEN I am presented with the developer's name, a recent photo, and links to sections about them, their work, and how to contact them
 
@@ -25,6 +27,7 @@ THEN I am taken to that deployed application
 
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
+```
 
 ## Responsiveness and Design
 I've spent quite a bit of time trying to optomize the website for use on both desktop screens as well as mobile screens.
