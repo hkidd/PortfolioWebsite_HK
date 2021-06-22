@@ -1,4 +1,5 @@
- :root {
+/* Defined a couple of universal color variables */
+:root {
 --main-accent: rgba(86, 166, 114, 1); 
 --background: rgba(38, 38, 38, 1); 
  }
@@ -12,20 +13,20 @@
 /* Column setup */
 .wrapper {
   display: flex;
-}
+  }
 
 .left {
   width: 30%;
   padding: 50px;
   min-width: 282px;
-}
+  }
 
 .right {
   width: 70%;
   padding: 50px;
-}
+  }
 
-/* Main text and images */
+/* Main body text and images */
 body { 
   font-family: "Goudy Bookletter 1911", sans-serif;
   font-size: 20px; 
@@ -43,89 +44,72 @@ h1 {
   font-size: 200%;
   }
 
-a {
-  display: block; 
-  color: var(--main-accent);
-  text-align: center;
-  padding: 5px 3px;
-  text-decoration: none;
+h2 {
+  padding: 5px;
   }
 
 li {
   display: inline;
   padding: 20px;
   }
-
+  
 .header h1 {
-  display: inline-flex;
   margin: auto;
   padding-top: 20px;
   text-align: left;
   }
-
+  
 nav ul {
   display: flex; 
   flex-wrap: wrap;
-  align-items: center; 
   justify-content: center;
-  top: 0;
   width: 100%;
   list-style-type: none;
-  margin: auto;
-  padding: 0;
-  overflow: hidden;
-  }
-  
-nav li {
+  overflow: auto;
   color: var(--main-accent);
-  display: inline-flex;
-  text-align: right;
   border-radius: 10px;
   padding: 20px;
   }
 
 .center-name {
-  display: flex;
-  justify-content: center;
   text-align: center;
   color: var(--main-accent);
   }
-
+  
 .about-me,
 .projects,
 .contact {
   border: 2px solid var(--main-accent);
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 10px;
   text-align: center;
   color: var(--background);
   background-color: var(--main-accent);
   }
-
+  
 .contact {
   margin-top: 50px;
   height: auto;
-}
+  }
 
 .about-me {
   margin-bottom: 50px;
   height: auto;
-}
+  }
 
 .profile-image {
   display: flex;
   margin: auto;
-  width: 70%;
+  width: 60%;
   height: auto;
-  border-radius: 100px;
-}
+  border-radius: 20px;
+  }
 
- .project-images {
+.project-images {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
-  flex-shrink: 0;
   max-width: 100%;
   padding: 18px;
   width: auto;
@@ -135,38 +119,26 @@ nav li {
 
 .primary-image {
   max-width: 100%;
-  width: auto;
-  max-height: 600px;
-  border-radius: 10px;
+  max-height: 675px;
+  border-radius: 20px;
   opacity: 0.5;
-}
+  }
 
 .secondary-image {
-  max-width: 100%;
+  max-width: 85%;
   max-height: 275px;
-  border-radius: 10px;
+  border-radius: 20px;
   opacity: 0.5;
-}
+  }
 
 figcaption {
   padding: 15px;
-  margin: auto;
-  width: auto;
-}
+  margin-bottom: 5px;
+  }
 
-.contact {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.contact a {
-  display: inline-flex;
-  flex-wrap: wrap;
-  color: inherit;
-  text-decoration: none;
-  text-align: center;
-}
+.follow-me {
+  margin-top: 15px;
+  }
 
 .footer {
   height: 50px;
@@ -175,7 +147,24 @@ figcaption {
   justify-content: center;
   color: var(--main-accent);
   background-color: var(--background);
-}
+  }  
+
+  /* Link properties */
+a {
+  display: block; 
+  color: var(--main-accent);
+  text-align: center;
+  padding: 5px 3px;
+  text-decoration: none;
+  }
+
+.contact a {
+  display: inline-flex;
+  flex-wrap: wrap;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  }
 
 /* Hover effects */
 .about-me:hover,
@@ -190,19 +179,19 @@ figcaption {
   text-shadow: 2px 4px 5px black;
   transition: all 0.5s ease-in-out;
   transform: scale(1.05);
-}
+  }
 
 img:hover {
   box-shadow: 5px 5px 5px black;
   transition: all 0.5s ease-in-out;
   transform: scale(1.05);
   border-radius: 10px;
-}
+  }
 
 .primary-image:hover,
 .secondary-image:hover {
   opacity: 1;
-}
+  }
 
 .center-name:hover,
 footer:hover,
@@ -234,31 +223,30 @@ nav li:hover {
     text-align: left;
   }
 
-  
   /* Social media icons */
 .fa-twitter .icon {
   background: #55ACEE;
   color: white;
   border-radius: 10px;
-}
+  }
 
 .fa-linkedin .icon {
   background: #007bb5;
   color: white;
   border-radius: 10px;
-}
+  }
 
 .fa-instagram .icon {
   background: #007bb5;
   color: white;
   border-radius: 10px;
-}
+  } 
 
 .contact a:hover, .icon:hover {
   border: 2px solid var(--main-accent);
   border-radius: 10px;
   padding: 5px;
-}
+  }
 
 /* Media query for smaller screens */
 @media screen and (max-width:768px) {
@@ -277,10 +265,11 @@ nav li:hover {
     width: 95%;
   }
 
-  .primary-image,
+  /* Changed opacity to 1 here since mobile doesn't show the same hover effect as desktop */
+.primary-image,
 .secondary-image {
   opacity: 1;
-}
+  }
 
 /* Adds 3D effect for mobile */
   .about-me,
@@ -292,6 +281,7 @@ nav li:hover {
 
   nav li,
   .center-name,
+  .back-to-top,
   footer {
     text-shadow: 5px 8px 8px black;
   }
