@@ -125,7 +125,6 @@ nav li {
   flex-wrap: wrap;
   flex-direction: column;
   padding: 18px;
-  margin: auto;
   }
 
  .project-images {
@@ -141,8 +140,6 @@ nav li {
   }
 
 .primary-image {
-  display: flex;
-  margin: auto;
   max-width: 100%;
   width: auto;
   max-height: 600px;
@@ -151,8 +148,6 @@ nav li {
 }
 
 .secondary-image {
-  display: flex;
-  margin: auto;
   max-width: 100%;
   max-height: 275px;
   border-radius: 10px;
@@ -163,11 +158,6 @@ figcaption {
   padding: 15px;
   margin: auto;
   width: auto;
-}
-
-.projects {
-  min-width: fit-content;
-  overflow: auto;
 }
 
 .contact {
@@ -221,7 +211,8 @@ img:hover {
 }
 
 .center-name:hover,
-footer:hover {
+footer:hover,
+.back-to-top:hover {
   text-shadow: -2px 5px 10px black;
   transition: all 0.3s ease-in-out;
   transform: scale(1.05);
