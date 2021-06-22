@@ -33,7 +33,7 @@ On mobile, the site starts with a more 3D look since you tend to miss out on the
 
 ## Example Images
 ### Desktop
-![Desktop](assets/images/DesktopScreenshot.jpg)
+![Desktop](assets/images/updatedDesktopScreenshot.jpg)
 <br>
 
 ### Mobile <br>
