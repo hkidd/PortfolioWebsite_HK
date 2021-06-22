@@ -1,6 +1,8 @@
 # My Portfolio Website
 Homework assignment #2 - Building a portfolio webpage from scratch.
 
+Link to the live page: https://hkidd.github.io/PortfolioWebsite_HK/
+
 ## Purpose
 The purpose of this website is to showcase my coding capabilities.  At the moment, I don't have much to add (aside from our first assignment and pictures of my dogs), but I plan to continue adding to this website over time.
 
@@ -42,8 +44,6 @@ On mobile, the site starts with a more 3D look since you tend to miss out on the
 
 ## External and Internal Links
 I have provided links not only to the various sections of the webpage, but also to external sites such as Github, LinkedIn, and Instagram.  This allows for more ways for the user to potentially interact with me.
-
-Link to the live page: https://hkidd.github.io/PortfolioWebsite_HK/
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
