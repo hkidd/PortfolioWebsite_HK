@@ -4,7 +4,7 @@ Homework assignment #2 - Building a portfolio webpage from scratch.
 Link to the live page: https://hkidd.github.io/PortfolioWebsite_HK/
 
 ## Purpose
-The purpose of this website is to showcase my coding capabilities.  At the moment, I don't have much to add (aside from our first assignment and pictures of my dogs), but I plan to continue adding to this website over time.
+The purpose of this website is to showcase my coding capabilities.  It has been recently updated with images of more recent projects and assignments.
 
 ## Acceptance Criteria
 ```
