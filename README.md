@@ -1,5 +1,5 @@
 # My Portfolio Website
-Homework assignment #2 - Building a portfolio webpage from scratch.
+Building a portfolio webpage from scratch.
 
 Link to the live page: https://hkidd.github.io/PortfolioWebsite_HK/
 
