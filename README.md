@@ -54,4 +54,4 @@ I have provided links not only to the various sections of the webpage, but also 
 ## Contact
 Harrison Kidd
 
-harrisonakidd@gmail.com
+mailto:harrisonakidd@gmail.com
