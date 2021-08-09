@@ -38,12 +38,12 @@ On mobile, the site starts with a more 3D look since you tend to miss out on the
 
 ## Example Images
 ### Desktop
-![Desktop](assets/images/updatedDesktopScreenshot2.jpg)
+![Desktop](assets/images/updatedDesktop.png)
 <br>
 
 ### Mobile <br>
-<img src="assets/images/updatedMobileScreenshot1.png" width="350" height="660" />
-<img src="assets/images/updatedMobileScreenshot2.png" width="350" height="660" />
+<img src="assets/images/updatedMobile1.png" width="350" height="600" />
+<img src="assets/images/updatedMobile2.png" width="350" height="660" />
 
 ## External and Internal Links
 I have provided links not only to the various sections of the webpage, but also to external sites such as Github, LinkedIn, and Instagram.  This allows for more ways for the user to potentially interact with me.
