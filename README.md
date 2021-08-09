@@ -54,4 +54,4 @@ I have provided links not only to the various sections of the webpage, but also 
 ## Contact
 Harrison Kidd
 
-mailto:harrisonakidd@gmail.com
+<a href="mailto:harrisonakidd@gmail.com">harrisonakidd@gmail.com</a>
